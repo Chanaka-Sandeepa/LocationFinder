@@ -34,8 +34,8 @@ public class LocationUpdatingService {
 
     public static Coordinate2D currentLocation;
 
-    public static float pointX=0;
-    public static float pointY=0;
+    public static float pointX=0.2f;
+    public static float pointY=0.2f;
 
 
     static int beacon1Major=0;

@@ -4,8 +4,8 @@ import java.text.DecimalFormat;
 
 public class Coordinate2D {
 
-        private double x;
-        private double y;
+        private double x = 0.0;
+        private double y = 0.6;
 
         public Coordinate2D(double x, double y){
             this.x=x;

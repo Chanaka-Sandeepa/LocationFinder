@@ -32,6 +32,7 @@ import org.altbeacon.beacon.MonitorNotifier;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
 
+import java.text.ParseException;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -43,6 +44,7 @@ import company.com.locationfinder.fragments.BeaconFragment;
 import company.com.locationfinder.fragments.GraphFragment;
 import company.com.locationfinder.fragments.LocationPointFragment;
 import company.com.locationfinder.fragments.SettingsFragment;
+import company.com.locationfinder.fragments.ShoppingNavigatorFragment;
 
 public class MainActivity extends AppCompatActivity
         implements BeaconConsumer,
@@ -228,6 +230,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.check_beacons) {
 
             fragment = new BeaconFragment();
+        } else if (id == R.id.path_navigator) {
+
+            try {
+                fragment = new ShoppingNavigatorFragment();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
         }
 
         if (fragment != null) {

@@ -14,5 +14,12 @@ public final class Constants {
     public static String b2_y="b2_y";
     public static String b3_y="b3_y";
 
+    //locations of the items in the 2d array
+    public static int[] item1_loc = new int[]{1, 1};
+    public static int[] item2_loc = new int[]{3, 1};
+    public static int[] item3_loc = new int[]{2, 3};
+
+    public static float user_pos;
+
 
 }

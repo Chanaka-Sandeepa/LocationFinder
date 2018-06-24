@@ -13,6 +13,10 @@
             android:id="@+id/location_point"
             android:icon="@drawable/ic_location_on_black_24dp"
             android:title="Location" />
+        <item
+            android:id="@+id/path_navigator"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Path Navigator" />
 
     </group>
 
