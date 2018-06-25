@@ -304,8 +304,8 @@ public class MazeSolver {
         printPath(local_path);
         int newX = local_path.get(1)[0];
         int newY = local_path.get(1)[1];
-        local_path.remove(0);
-        local_path.remove(local_path.size()-1);
+//        local_path.remove(0);
+//        local_path.remove(local_path.size()-1);
         path.add(local_path);
 
         while (collectedItemsCount < goalItemsCount) {
@@ -320,11 +320,12 @@ public class MazeSolver {
             newX = local_path2.get(1)[0];
             newY = local_path2.get(1)[1];
 //            local_path2.remove(0);
-            local_path2.remove(local_path.size()-1);
+//            local_path2.remove(local_path.size()-1);
             path.add(local_path2);
             printPath(local_path2);
         }
-//        System.out.println(Arrays.toString(path));
+        System.out.print("1111111111111111111111111111111111111111111111111111111");
+        System.out.println(path);
 
     }
 
@@ -389,9 +390,9 @@ public class MazeSolver {
         return !(x < 0 || x >= matrix.length || y < 0 || y >= matrix.length) && (matrix[x][y] != 1);
     }
     public ArrayList<int[]> backtrackFromQueue(List<Node> queue, int goal_index){
-        System.out.print("queue start--------------------");
-        System.out.print(queue.get(0).x);
-        System.out.println(queue.get(0).y);
+//        System.out.print("queue start--------------------");
+//        System.out.print(queue.get(0).x);
+//        System.out.println(queue.get(0).y);
         ArrayList<int[]> local_path = new ArrayList<int[]>();
         Node current = queue.remove(goal_index);
         while (queue.indexOf(current) != 0){
